@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: #2e2e2e;
+}
+.main__titulo {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 10px;
+  text-shadow: 6px 4px 2px rgba(248, 248, 248, 0.28);
+}
+.main__container-mobile {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+}
+.main__container-mobile__article {
+  text-align: center;
+  padding: 10px;
+}
+.main__container-mobile__article--img {
+  width: 300px;
+  height: auto;
+  border-radius: 20px;
+  padding: 5px;
+}
+.main__container-mobile__article--p {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 6px 4px 2px rgba(248, 248, 248, 0.28);
+}
+
+.main__container-desktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  .main__titulo {
+    margin: 40px;
+  }
+  .main__container-movile {
+    display: none;
+  }
+  .main__container-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+  }
+  .main__container-desktop__article {
+    text-align: center;
+    padding: 10px;
+  }
+  .main__container-desktop__article--img {
+    width: 500px;
+    height: 280px;
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: 2px 2px 4px grey;
+  }
+  .main__container-desktop__article--img:hover {
+    box-shadow: 2px 2px 4px red;
+  }
+  .main__container-desktop__article--p {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: x-large;
+    text-shadow: 6px 4px 2px rgba(248, 248, 248, 0.28);
+  }
+}
+.header {
+  background-color: #2e2e2e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.header__titulo {
+  width: 100px;
+  height: auto;
+}
+.header__nav__ul {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+  }
+  .header__titulo {
+    width: 150px;
+    height: auto;
+  }
+  .header__nav__ul {
+    display: flex;
+    list-style-type: none;
+  }
+  .header__nav__ul-li {
+    margin: 0 5px;
+    border-right: 1px solid white;
+    padding-right: 8px;
+  }
+  .header__nav__ul-li-a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+  }
+  .header__nav__ul-li-a:hover {
+    text-decoration: underline;
+  }
+}
+.footer {
+  background-color: #2e2e2e;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__container--twitter {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 15px;
+  text-shadow: 6px 4px 2px rgba(248, 248, 248, 0.28);
+}
+.footer__container--mail {
+  color: white;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 15px;
+  text-shadow: 6px 4px 2px rgba(248, 248, 248, 0.28);
+}
+
+@media (min-width: 1024px) {
+  .footer__container {
+    display: none;
+  }
+  .footer {
+    background-color: #2e2e2e;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__container--twitter {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 25px;
+    text-shadow: 6px 4px 2px rgba(248, 248, 248, 0.28);
+  }
+  .footer__container--mail {
+    color: white;
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 25px;
+    text-shadow: 6px 4px 2px rgba(248, 248, 248, 0.28);
+  }
+}
+.form-select {
+  margin-bottom: 40px;
+  width: 310px;
+}
+
+.main__titulo__wcwp {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 10px;
+  text-shadow: 6px 4px 2px rgba(248, 248, 248, 0.28);
+}
+
+.backlog__main__container {
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.contacto__label__color {
+  color: white;
+}
+
+/* Mobile first*/
+@media (min-width: 1024px) {
+  .dropdown {
+    display: none;
+  }
+  .form-select {
+    width: 100%;
+  }
+  .main__titulo__wcwp {
+    padding: 50px;
+  }
+  .contacto__label__color {
+    color: white;
+  }
+  .backlog__main__container {
+    color: white;
+    text-align: center;
+  }
+}

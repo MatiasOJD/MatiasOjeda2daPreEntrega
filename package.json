@@ -1,0 +1,14 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "Proyecto de práctica para Coderhouse.\r Esta versión contiene agregado de **Boostrap**, **Media querys**, **GIT**\r y **GITHUB**. Con uso de Flex para el nav bar y Grid para el contenido.",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "sass ./sass/main.scss ./css/main/main.css -w --no-source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}
