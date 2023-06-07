@@ -1,11 +1,6 @@
 @import '../utils/variables';
 
 .main{
-    &__titulo{
-      color: white;
-      font-family: $letra;
-      text-align: center; padding: 10px;
-    }
 
     &__container-mobile{
       display: grid;
@@ -38,12 +33,6 @@
 @media(min-width: $bpLarge){
 
   .main{
-    max-width: 1200px;
-    margin: auto; padding: 20px;
-
-      &__titulo{
-        margin: 40px;
-      }
 
       &__container-movile{
         display: none;
@@ -63,7 +52,7 @@
                 width: 500px; height: 280px;
                 border-radius: 30px;
                 padding: 5px;
-                box-shadow: 1px 1px 2px red;
+                box-shadow: 1px 1px 2px #950000;
               }
 
           }

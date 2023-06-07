@@ -1,47 +1,45 @@
 @import './utils/variables';
 @import './utils/global';
 
-@import './views/index';
-
 @import './components/header';
 @import './components/footer';
 
-.form-select{
-  margin-bottom: 40px;
-  width: 310px;
-}
-.main__titulo__wcwp{
-  color: white;
-  font-family: $letra;
-  text-align: center; padding: 10px;
-}
-.backlog__main__container{
-  color: white;
-  text-align: center;
-  padding-bottom: 20px;
-}
-.contacto__label__color{
-  color: white;
-}
-/* Mobile first*/
+@import './views/index';
+@import './views/backlog';
+@import './views/contacto';
 
+/* Mobile first*/
+.main{
+  height: 1000px;
+  
+  &__titulo{
+    color: white;
+    font-family: $letra;
+    text-align: center; padding: 10px;
+  }
+
+}
+
+/* Desktop */
 @media(min-width: $bpLarge){
 
   .dropdown{
   display: none;
   }
+
   .form-select{
-    width: 100%;
+    width: 60%;
+    margin: auto; margin-bottom: 40px;
   }
-  .main__titulo__wcwp{
-    padding: 50px;
-  }
-  .contacto__label__color{
-    color: white;
-  }
-  .backlog__main__container{
-    color: white;
-    text-align: center;
+
+  .main{
+  
+    height: 1200px;
+
+    &__titulo{
+      padding: 50px;
+    }
+
   }
 
 }

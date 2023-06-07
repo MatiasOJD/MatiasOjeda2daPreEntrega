@@ -9,7 +9,10 @@
 }
 
 body{
-  background-color: black;
+  background-color: #0A0A0A;
+  background-image: url(https://preview.redd.it/3i3z4ijxfpn61.jpg?width=4891&format=pjpg&auto=webp&s=9b4914c1b37ffc90e5b08f29b8b03b5e8bbc8ba2);
+  background-size: cover;
+  background-position: center;
 }
 
 .header{
@@ -178,7 +181,6 @@ body{
   }
 
   .footer{
-    background-color: #2e2e2e;
     max-width: 1200px; margin: auto;
   }
   
